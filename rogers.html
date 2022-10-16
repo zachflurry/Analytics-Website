@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg py-3 bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="data:image/jpeg;base64,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" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-primary ms-lg-3">Start</a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero vh-100 d-flex align-items-center" id="home">
+    <div class="container>">
+      <div class="row">
+        <div class="col-lg-7 mx-auto text-center">
+          <h1 class="display-4 text-white">Eclipse Analytics</h1>
+          <p class="text-white py-3">Welcome to Eclipse Analytics. The pinnacle of data analytics is now at your fingertips with plans suitable for all customers.  With wide ranging technologies used, this is the top of the line location for any needs.</p>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+          
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">SERVICES</h6>
+        <h1>Our Services</h1>
+        <p class="py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptas non ea modi est, a doloribus debitis quo expedita enim mollitia! Illo quas non fugiat quod molestiae cum! Quos, porro!</p>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-sm-6">
+              <div class="service card-effect bounceInUp">
+                  <div class="iconbox">
+                    <i class='bx bx-chart'></i>
+                  </div>
+                  <h5 class="mt-4 mb-2">Stock Market</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+                      perferendis </p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+              <div class="service card-effect">
+                  <div class="iconbox">
+                    <i class='bx bx-basketball'></i>
+                  </div>
+                  <h5 class="mt-4 mb-2">Sports</h5>
+                  <p>Top of the line predictions and odds.  Specializing in NCAA March Madness, College Football, and MLB. Our model uses the newest technologies  </p>
+              </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+              <div class="service card-effect">
+                  <div class="iconbox">
+                    <i class='bx bx-dollar'></i>
+                  </div>
+                  <h5 class="mt-4 mb-2">Currency</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil perspiciatis illo asperiores
+                      perferendis </p>
+              </div>
+          </div>
+          
+          </div>
+          
+          </div>
+          
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">PRICING</h6>
+        <h1>Our Fair and Best on the market pricing</h1>
+        <p class="py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptas non ea modi est, a doloribus debitis quo expedita enim mollitia! Illo quas non fugiat quod molestiae cum! Quos, porro!</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6">
+            <div class="pricing card-effect">
+            <h6>STARTER</h6>
+            <h1>$100</h1>
+            <ul class="list-unstyled">
+              <li><i class="bx bxs-check-circle"></i></li>
+              <li><i class="bx bxs-check-circle"></i></li>
+              <li><i class="bx bxs-check-circle"></i></li>
+              <li><i class="bx bxs-check-circle"></i></li>
+            </ul>
+            
+            <button class="btn btn-primary">Get Started</button>
+            </div>
+            </div>    
+            <div class="col-lg-3 col-sm-6">
+              <div class="pricing card-effect">
+              <h6>DEVELOPER</h6>
+              <h1>$1000</h1>
+              <ul class="list-unstyled">
+                <li><i class="bx bxs-check-circle"></i></li>
+                <li><i class="bx bxs-check-circle"></i></li>
+                <li><i class="bx bxs-check-circle"></i></li>
+                <li><i class="bx bxs-check-circle"></i></li>
+              </ul>
+              
+              <button class="btn btn-primary">Get Started</button>
+              </div>
+              </div>    
+              <div class="col-lg-3 col-sm-6">
+            <div class="pricing card-effect">
+            <h6>PROFESSIONAL</h6>
+            <h1>$5,000</h1>
+            <ul class="list-unstyled">
+              <li><i class="bx bxs-check-circle"></i></li>
+              <li><i class="bx bxs-check-circle"></i></li>
+              <li><i class="bx bxs-check-circle"></i></li>
+              <li><i class="bx bxs-check-circle"></i></li>
+            </ul>
+            
+            <button class="btn btn-primary">Get Started</button>
+            </div>
+            </div>    
+            <div class="col-lg-3 col-sm-6">
+              <div class="pricing card-effect">
+              <h6>CORPORATION</h6>
+              <h1>$10,000</h1>
+              <ul class="list-unstyled">
+                <li><i class="bx bxs-check-circle"></i></li>
+                <li><i class="bx bxs-check-circle"></i></li>
+                <li><i class="bx bxs-check-circle"></i></li>
+                <li><i class="bx bxs-check-circle"></i></li>
+              </ul>
+              
+              <button class="btn btn-primary">Get Started</button>
+              </div>
+              </div>    
+          </div>
+          
+        </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="text-primary">THE TEAM</h6>
+        <h1>Our Team</h1>
+        <p class="py-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto voluptas non ea modi est, a doloribus debitis quo expedita enim mollitia! Illo quas non fugiat quod molestiae cum! Quos, porro!</p>
+          </div>
+        </div>
+
+        <div class="row text-center">
+          <div class="col-lg-6 col-sm-3">
+            <div class="team-member card-effect">
+              <img src="https://media-exp1.licdn.com/dms/image/C5603AQEWM9PCSZvajw/profile-displayphoto-shrink_800_800/0/1660083908883?e=1667433600&v=beta&t=pSzoQwb7YpHmIz5RtYMGwyP_G7DZ8owkV2UzNOtDKHE">
+            <h5 class="mb-0">Jack Rogers</h5>
+            <p>Chief Data Analyst</p>
+            <div class="social-icons">
+            <a href="#"><i class= "bx bxl-github"></i></a>
+            <a href="#"><i class= "bx bxl-linkedin"></i></a>
+            <a href="#"><i class= "bx bxl-codepen"></i></a>
+            </div>
+            </div>
+            </div>
+            <div class="col-lg-6 col-sm-3">
+              <div class="team-member card-effect">
+                <img src="https://media-exp1.licdn.com/dms/image/C5603AQGiqdmnKrkj5w/profile-displayphoto-shrink_800_800/0/1661287521530?e=1667433600&v=beta&t=9M3BGvQMujep4cqR7qeiQraQjWfAMhz75Pje8rg-4Z0">
+              <h5 class="mb-0">Zach Flurry</h5>
+              <p>Lead UX/UI Developer</p>
+              <div class="social-icons">
+              <a href="#"><i class= "bx bxl-github"></i></a>
+              <a href="#"><i class= "bx bxl-linkedin"></i></a>
+              <a href="#"><i class= "bx bxl-codepen"></i></a>
+              </div>
+              </div>
+              </div>
+            
+            </div>
+            </div>
+            </section>
+            <section id="contact">
+              <div class="container">
+                  <div class="row mb-5">
+                      <div class="col-md-8 mx-auto text-center">
+                          <h6 class="text-primary">CONTACT</h6>
+                          <h1>Get In Touch</h1>
+                          <p>Lorem ipsum dolor sit amet consectetur nisi necessitatibus repellat distinctio eveniet eaque fuga
+                              in cumque optio consectetur harum vitae debitis sapiente praesentium aperiam aut</p>
+                      </div>
+                  </div>
+      
+                  <form action="" class="row g-3 justify-content-center">
+                      <div class="col-md-5">
+                          <input type="text" class="form-control" placeholder="Full Name">
+                      </div>
+                      <div class="col-md-5">
+                          <input type="text" class="form-control" placeholder="Enter E-mail">
+                      </div>
+                      <div class="col-md-10">
+                          <input type="text" class="form-control" placeholder="Enter Subject">
+                      </div>
+                      <div class="col-md-10">
+                          <textarea name="" id="" cols="30" rows="5" class="form-control"
+                              placeholder="Enter Message"></textarea>
+                      </div>
+                      <div class="col-md-10 d-grid">
+                          <button class="btn btn-primary">Contact</button>
+                      </div>
+                  </form>
+      
+              </div>
+          </section><!-- CONTACT -->
+
+          
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
